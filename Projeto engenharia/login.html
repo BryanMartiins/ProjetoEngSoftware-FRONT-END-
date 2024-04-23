@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head> 
+<body>
+
+
+<menu>
+  <div class=" menu">
+    <li><a href="#">MENU</a></li>
+    <li><a href="informaçoes.html">Informaçoes do site.</a></li>
+    <li><a href="#">Ajuda ?</a></li>
+  </div>
+</menu>
+
+<header>
+  <div class="pagina">
+  <img src="logo1.png" alt="Logo da instituição">
+</div>
+    <h1>LearnLink</h1>
+    <div class="form-imagem">
+      <img src="undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_selectoption_y9cm_mx7w_-2-_vjsk_js62_gghb_35qw_um1m_-1-_cqnl_5lof (1).svg">
+  </div>
+  </header>
+
+
+  <section class="container">
+
+    <h2>Entre ou Cadastre-se</h2>
+
+    <form action="#">
+      <label for="usuario" style="font-size: 18px;">Usuário:</label>
+      <input type="text" id="usuario" name="usuario" required placeholder="">
+      
+      <label for="senha" style="font-size: 18px;">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+      
+      
+      <a href="#" style="font-size: 16px;">Esqueci minha senha</a>
+      
+      <div class="opcoes">
+        <input type="radio" name="tipo" id="administrador" value="administrador" required data-usuario="Insira os dados do Administrador:">
+        <label for="administrador">Administrador</label>
+      </div>
+      
+      <div class="opcoes">
+        <input type="radio" name="tipo" id="coordenador" value="coordenador" required data-usuario="Insira os dados do Coordenador:">
+        <label for="coordenador">Coordenador</label>
+      </div>
+      
+      <div class="opcoes">
+        <input type="radio" name="tipo" id="professor" value="professor" required data-usuario="Insira os dados do Professor:">
+        <label for="professor">Professor</label>
+      </div>
+
+        <div class="opcoes">
+        <input type="radio" name="tipo" id="aluno" value="aluno" required data-usuario="Insira os dados do Aluno:">
+        <label for="aluno">Aluno</label>
+     </div>
+
+     <script>
+      const radios = document.querySelectorAll('input[name="tipo"]');
+      const usuarioLabel = document.querySelector('label[for="usuario"]');
+    
+      radios.forEach(radio => {
+        radio.addEventListener('change', () => {
+          if (radio.checked) {
+            usuarioLabel.textContent = radio.dataset.usuario;
+          }
+        });
+      });
+    </script>
+ 
+
+ <div class="cadastro-button">
+  <button><a href="cadastro.html">Cadastre-se</a></button>
+ </div>
+
+      
+      <div class="login-button">
+        <button type="submit">Entrar</button>
+      </div>
+
+      
+<script>
+
+  const usuarioInput = document.getElementById('usuario');
+const senhaInput = document.getElementById('senha');
+const tipoInputs = document.querySelectorAll('input[name="tipo"]');
+const loginButton = document.querySelector('.login-button button');
+
+loginButton.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  const usuario = usuarioInput.value;
+  const senha = senhaInput.value;
+  const tipoSelecionado = Array.from(tipoInputs).find(input => input.checked).value;
+
+  // Validação de login por tipo de usuário ************ ATUALIZAR SCRIPT DEPOIS FEITO APENAS PARA FUNCIONAMENTO DO PROGRAMA PARCIAL
+  switch (tipoSelecionado) {
+    case 'administrador':
+      if (usuario === 'admin' && senha === '123') {
+        window.location.href = 'tela-adm.html';
+      } else {
+        alert('Usuário ou senha inválidos para administrador!');
+      }
+      break;
+    case 'coordenador':
+      if (usuario === 'coordenador' && senha === '456') {
+        window.location.href = 'tela-coordenador.html';
+      } else {
+        alert('Usuário ou senha inválidos para coordenador!');
+      }
+      break;
+    case 'professor':
+      if (usuario === 'professor' && senha === '789') {
+        window.location.href = 'tela-professor.html';
+      } else {
+        alert('Usuário ou senha inválidos para professor!');
+      }
+      break;
+    case 'aluno':
+      if (usuario === 'aluno' && senha === '0210') {
+        window.location.href = 'tela-aluno.html';
+      } else {
+        alert('Usuário ou senha inválidos para aluno!');
+      }
+      break;
+  }
+});
+
+    
+  
+      </script>
+      
+
+       </form>
+  </section>
+  <h2>Patrocinadores</h2>
+  <ul class="patrocinadores">
+    <img src="img/logo1.png" alt="Alex Marino">
+    <img src="img/logo2" alt="Alex Marino">
+    <img src="img/logo2" alt="Alex Marino">
+    <img src="img/logo2" alt="Alex Marino">
+  <footer>
+    <p>Fatec-Ourinhos &copy; 2024 - Projeto de engenharia</p>
+  </footer>
+
+
+  
+
+
+</body>
+</html>

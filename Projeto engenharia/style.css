@@ -1,0 +1,338 @@
+/* fundo da pagina */
+
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    margin: 0;
+    padding: 5px;
+    background: linear-gradient(#9ddac0db, #c398cd);
+   
+  }
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+
+}
+
+
+/* MENU */
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 140px; /* New height for full screen */
+  background-color: #62908e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 10; /* Increased z-index for better stacking */
+}
+
+.menu li {
+  padding: 10px; /* Adjust padding for spacing */
+  margin: 1%;
+  list-style: none; /* Remove default list marker */
+}
+
+.menu li a {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Menu item text color */
+}
+
+.menu li:hover { /* Hover effect background color */
+  background-color: #f079791a;
+}
+
+/* CABEÇALHO*/
+  header {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    
+  }
+  
+  header img {
+    max-width: 140px;
+    margin:15px;
+    margin-top: auto;
+  }
+
+  .pagina{
+    float: left;
+    max-width: 10px;
+
+  }
+
+  /* CAIXA DE LOGIN E OPÇOES */
+  section.container {
+    border: 4px solid #ddd;
+    padding: 40px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    
+  }
+  
+  section h2 {
+    text-align: center;
+  }
+  
+  section form {
+    margin-top: 20px;
+  }
+  
+  section form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  section form input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  section .opcoes {
+    appearance: none; /* Reset default appearance */
+    width: 16px; /* Set a fixed width for consistency */
+    height: 16px; /* Set a fixed height for consistency */
+    margin-right: 20px; /* Add some margin for spacing */
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  section .opcoes input {
+    display: flex;
+    align-items: center;
+   
+  }
+
+  /* BOTOES CADASTRO E ENTRAR */
+  
+
+
+  section button {
+    background-color: #e0c3c3;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #590e8b;
+    cursor: pointer;
+    
+  }
+
+
+  .login-button {
+    display: flex;
+    align-items: center;
+  
+}
+
+.login-button button{
+    border: none;
+    background-color: #9ddac0db;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px; /* Largura do botão */
+    height: 40px;
+    margin-top: 30px;
+    }
+
+
+.cadastro-button {
+  display: flex;
+  align-items: center;
+  float: right;
+  position: relative ;
+  margin-top: 50px;
+}
+
+.cadastro-button button{
+    border: none;
+    background-color: #9ddac0db;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px; /* Largura do botão */
+    height: 40px;
+}
+
+
+.opçoes-button {
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+}
+
+.opçoes-button button{
+  text-decoration: none;
+  background-color: #9ddac0db;
+  margin: 10px;
+  border-radius: 5px;
+  width: 200px; /* Largura do botão */
+  height: 40px;
+  margin: 10px;
+}
+.consulta table{
+  width: 500px;   
+  display: block;
+  overflow-x: auto;
+}
+.consulta table td{
+  border: 1px solid black;
+
+}
+.consulta table tbody tr{
+  border-collapse: collapse;
+}
+/* PARTES DAS TELAS DO ARQUIVO ENTRAR*/
+
+.container1 {
+  
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex; /* Added line */
+  margin-top: 20px;
+  background-color: white; /* Added line for white background */
+  border: 1px solid black; /* Added line for black border */
+}
+
+.quadrados {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.quadrado {
+  width: 300px;
+  margin: 60px;
+  border: 8px solid #aaa; /* Existing border style */
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.quadrado img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.informacoes {
+  padding: 10px;
+}
+
+.informacoes h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.informacoes p {
+  margin-bottom: 5px;
+}
+
+
+h4{
+ margin-top: 20 px;
+ font-size: 40px;
+ text-align: center;  /* Center align the text */
+ margin-bottom: 20px;
+}
+
+
+
+
+
+/*tela de adm interno*/
+
+.menuopçoes {
+  border: 4px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  *width: 300px;*/* Changed width to 300px */
+  margin: 0 auto;
+  background-color: #fff;
+  
+}
+.menuopçoes ul {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically (optional) */
+}
+
+.menuopçoes ul li {
+  list-style: none; /* Removes default bullet points */
+  margin: 0 90px; /* Increase spacing between buttons */
+}
+
+.menuopçoes ul li button {
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+
+
+/* tela de cadastro de evento*/
+
+section.cadastro {
+  border: 4px solid #ddd;
+  padding: 40px;
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  
+}
+
+section.consulta {
+  border: 4px solid #ddd;
+  padding: 40px;
+  width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 70px;
+  
+}
+
+
+/* RODAPÉ */
+
+  footer {
+    color: #fff;
+    text-align: right;
+    padding: 2px;
+    position: relative;
+    
+  }
+  
+  .opcao-flutuante {
+    display: none;
+    position: flex;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 16px;
+    z-index: 1;
+  }
+  
+  .menuopçoes li:hover .opcao-flutuante {
+    display: block;
+  }
+  
+  .opcao-flutuante:nth-child(1) {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .opcao-flutuante:nth-child(2) {
+    top: 10px;
+    right: 10px;
+  }
+  
+  
+  

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head> 
+<body>
+
+
+<menu>
+  <div class=" menu">
+    <li><a href="#">MENU</a></li>
+    <li><a href="informaçoes.html">Informaçoes do site.</a></li>
+    <li><a href="#">Ajuda ?</a></li>
+  </div>
+</menu>
+
+<header>
+  <div class="pagina">
+  <img src="logo1.png" alt="Logo da instituição">
+</div>
+    <h1>LearnLink</h1>
+    <div class="form-imagem">
+      <img src="undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_selectoption_y9cm_mx7w_-2-_vjsk_js62_gghb_35qw_um1m_-1-_cqnl_5lof (1).svg">
+  </div>
+  </header>
+
+  <section class="cadastro">
+    <h2>Cadastrar Eventos</h2>
+    <form action="entrar-adm.html" method="post" enctype="multipart/form-data">
+
+      <label for="nome">Nome do Evento:</label>
+      <input type="text" id="nome" name="nome" required>
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" required>
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" required>
+      <label for="local">Local:</label>
+      <input type="text" id="local" name="local" required>
+      <label for="responsavel">Colaborador/Professor Responsável:</label>
+      <input type="text" id="responsavel" name="responsavel" required>  <label for="imagem">Imagem:</label>
+      <input type="file" id="imagem" name="imagem" accept="image/*" required>
+      <label for="vagas">Vagas Disponíveis:</label>
+      <input type="number" id="vagas" name="vagas" min="1" required>
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  
+  
+  <h2>Patrocinadores</h2>
+  <ul class="patrocinadores">
+    <img src="img/logo1.png" alt="Alex Marino">
+    <img src="img/logo2" alt="Alex Marino">
+    <img src="img/logo2" alt="Alex Marino">
+    <img src="img/logo2" alt="Alex Marino">
+  <footer>
+
+    <p>Fatec-Ourinhos &copy; 2024 - Projeto de engenharia</p>
+  </footer>
+
+</body>
+</html>

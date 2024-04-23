@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Consulta de Eventos</title>
+</head>
+<body>
+
+<menu>
+  <div class="menu">
+    <li><a href="#">MENU</a></li>
+    <li><a href="informaçoes.html">Informaçoes do site.</a></li>
+    <li><a href="#">Ajuda ?</a></li>
+  </div>
+</menu>
+
+<header>
+  <div class="pagina">
+    <img src="logo1.png" alt="Logo da instituição">
+  </div>
+  <h1>LearnLink</h1>
+  <div class="form-imagem">
+    <img src="undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_selectoption_y9cm_mx7w_-2-_vjsk_js62_gghb_35qw_um1m_-1-_cqnl_5lof (1).svg">
+  </div>
+</header>
+
+<section class="consulta">
+    <h2>Consulta de Eventos</h2>
+    <form action="consulta_evento.php" method="post">
+      <label for="evento_nome">Nome do Evento:</label>
+      <input type="text" id="evento_nome" name="evento_nome" required>
+      <br>
+      <button type="submit">Buscar Evento</button>
+    </form>
+    
+    <div id="event-details">
+      </div>
+  </section>
+  
+
+<footer>
+  <p>Fatec-Ourinhos &copy; 2024 - Projeto de engenharia</p>
+</footer>
+
+</body>
+</html>
