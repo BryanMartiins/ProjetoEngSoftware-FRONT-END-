@@ -1,14 +1,17 @@
 const formulario = document.querySelector("form");
-const registro = document.querySelector(".registro");
-const nome = document.querySelector(".nome");
-const cpf = document.querySelector(".cpf");
+const RA = document.querySelector(".RA");
+const Nome_Completo = document.querySelector(".nome_Completo");
+const CPF = document.querySelector(".CPF");
 const email = document.querySelector(".email");
-const endereco = document.querySelector(".endereco");
-const senha = document.querySelector(".senha");
+const Alun_senha = document.querySelector(".Alun_senha");
 
 
 function cadastra(){
-    fetch("http://localhost:8080/Administrador",
+
+    
+    console.log(Nome_Completo.value,RA.value,CPF.value,email.value,Alun_senha.value)
+
+    fetch("http://localhost:8080/Aluno",
          {
             headers:{
                 'Accept' : 'application/json',
@@ -16,13 +19,13 @@ function cadastra(){
             },
             method: "POST",
             body: JSON.stringify({
-                num_Registro: registro.value,
-                nome_Completo: nome.value,
-                cpf: cpf.value,
-                email: email.value,
-                endereço: endereco.value,
-                senha: senha.value,
+                "ra": RA.value,
+                "nomeCompleto": Nome_Completo.value,
+                "cpf": CPF.value,
+                "email": email.value,
+                "alun_senha": Alun_senha.value,
             })
+            
         
         })
         .then(function (res) {console.log(res) })
@@ -31,12 +34,11 @@ function cadastra(){
 
     
 function limpar(cadastrar) {    
-    registro.value = "";
-    nome.value = "";
-    cpf.value = "";
+    RA.value = "";
+    Nome_Completo.value = "";
+    CPF.value = "";
     email.value = "";
-    endereco.value = "";
-    senha.value = "";
+    Alun_senha.value = "";
 };
 
 formulario.addEventListener('submit', function (event) {
