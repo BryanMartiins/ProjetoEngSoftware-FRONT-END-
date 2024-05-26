@@ -1,14 +1,13 @@
 const formulario = document.querySelector("form");
-const chave_Autorizacao = document.querySelector(".Chave_Autorizacao");
-const nomeCompleto = document.querySelector("nomeCompleto");
-const CPF = document.querySelector(".CPF");
+const chave_Autorizacao = document.querySelector(".chave_autorizacao");
+const nomeCompleto = document.querySelector(".nomeCompleto");
+const CPF = document.querySelector(".cpf");
 const email = document.querySelector(".email");
 const endereço = document.querySelector(".endereço");
-const senha = document.querySelector(".Senha");
+const senha = document.querySelector(".senha");
 
 function cadastra(){
 
-    console.log(chave_Autorizacao)
     
 
     fetch("http://localhost:8080/Coordenador",
