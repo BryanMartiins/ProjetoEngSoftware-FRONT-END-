@@ -18,7 +18,7 @@ function cadastra(){
             },
             method: "POST",
             body: JSON.stringify({
-                "inscricao": chave_Autorizacao.value,
+                "inscricao": inscricao.value,
                 "nomeCompleto": nomeCompleto.value,
                 "cpf": CPF.value,
                 "email": email.value,
