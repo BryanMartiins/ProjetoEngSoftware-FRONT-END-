@@ -1,5 +1,5 @@
 const formulario = document.querySelector("form");
-const inscricao = document.querySelector(".inscricao");
+const num_Inscricao = document.querySelector(".num_inscricao");
 const nomeCompleto = document.querySelector(".nomeCompleto");
 const CPF = document.querySelector(".cpf");
 const email = document.querySelector(".email");
@@ -18,11 +18,11 @@ function cadastra(){
             },
             method: "POST",
             body: JSON.stringify({
-                "inscricao": inscricao.value,
+                "numInscricao": num_Inscricao.value,
                 "nomeCompleto": nomeCompleto.value,
                 "cpf": CPF.value,
                 "email": email.value,
-                "endereço" : endereço.value,
+                "endereco" : endereço.value,
                 "senha": senha.value,
             })
             
@@ -34,7 +34,7 @@ function cadastra(){
 
     
 function limpar(cadastrar) {    
-    chave_Autorizacao.value = "";
+    num_Inscricao.value = "";
     nomeCompleto.value = "";
     CPF.value = "";
     email.value = "";
