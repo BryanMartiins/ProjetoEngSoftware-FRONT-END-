@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, inicial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script>"EventoConexao.js"</script>
-    <title>Login</title>
+    <script src="EventoConexao.js"defer></script>
+    <title>Cadastro Eventos</title>
 </head> 
 <body>
 
@@ -34,20 +34,20 @@
     <form action="entrar-adm.html" method="post" enctype="multipart/form-data">
 
       <label for="nome">Nome do Evento:</label>
-      <input type="text" id="nome" name="nome" required>
+      <input type="text" class="nomeEvento" id="nome" name="nome" required>
       <label for="data">Data:</label>
-      <input type="date" id="data" name="data" required>
+      <input type="date" class="data" id="data" name="data" required>
       <label for="hora">Hora:</label>
-      <input type="time" id="hora" name="hora" required>
+      <input type="time" class="hora" id="hora" name="hora" required>
       <label for="local">Local:</label>
-      <input type="text" id="local" name="local" required>
+      <input type="text" class="local" id="local" name="local" required>
       <label for="responsavel">Colaborador/Professor Responsável:</label>
-      <input type="text" id="responsavel" name="responsavel" required>  <label for="imagem">Imagem:</label>
+      <input type="text" class="responsavel" id="responsavel" name="responsavel" required>  <label for="imagem">Imagem:</label>
       <input type="file" id="imagem" name="imagem" accept="image/*" required>
       <label for="vagas">Vagas Disponíveis:</label>
       <input type="number" id="vagas" name="vagas" min="1" required>
       <label for="descricao">Descrição:</label>
-      <textarea id="descricao" name="descricao" required></textarea>
+      <textarea class="descricao" id="descricao" name="descricao" required></textarea>
       <button type="submit">Enviar</button>
     </form>
   </section>

@@ -1,10 +1,10 @@
 const formulario = document.querySelector("form");
-const chave_Autorizacao = document.querySelector(".chave_autorizacao");
-const nomeCompleto = document.querySelector(".nomeCompleto");
-const CPF = document.querySelector(".cpf");
-const email = document.querySelector(".email");
-const endereço = document.querySelector(".endereço");
-const senha = document.querySelector(".senha");
+const nomeEvento = document.querySelector(".nomeEvento");
+const data = document.querySelector(".data");
+const hora = document.querySelector(".hora");
+const local = document.querySelector(".local");
+const responsavel = document.querySelector(".responsavel");
+const descricao = document.querySelector(".descricao");
 
 function cadastra(){
 
@@ -18,12 +18,12 @@ function cadastra(){
             },
             method: "POST",
             body: JSON.stringify({
-                "chave_Autorizacao": chave_Autorizacao.value,
-                "nomeCompleto": nomeCompleto.value,
-                "cpf": CPF.value,
-                "email": email.value,
-                "endereço" : endereço.value,
-                "senha": senha.value,
+                "nomeEvento": chave_Autorizacao.value,
+                "data": nomeCompleto.value,
+                "hora": CPF.value,
+                "local": email.value,
+                "responsavel" : endereço.value,
+                "descricao": senha.value,
             })
             
         
