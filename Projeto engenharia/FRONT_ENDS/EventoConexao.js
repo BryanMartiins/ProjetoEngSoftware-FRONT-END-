@@ -8,7 +8,9 @@ const descricao = document.querySelector(".descricao");
 
 function cadastra(){
 
-    
+    console.log(nomeEvento.value,data.value,hora.value,local.value,responsavel.value,descricao.value
+        
+    )
 
     fetch("http://localhost:8080/Eventos",
          {
@@ -18,12 +20,12 @@ function cadastra(){
             },
             method: "POST",
             body: JSON.stringify({
-                "nomeEvento": chave_Autorizacao.value,
-                "data": nomeCompleto.value,
-                "hora": CPF.value,
-                "local": email.value,
-                "responsavel" : endereço.value,
-                "descricao": senha.value,
+                "nomeEvento": nomeEvento.value,
+                "data": data.value,
+                "hora": hora.value,
+                "local": local.value,
+                "responsavel" : responsavel.value,
+                "descriçao": descricao.value,
             })
             
         
@@ -34,12 +36,12 @@ function cadastra(){
 
     
 function limpar(cadastrar) {    
-    chave_Autorizacao.value = "";
-    nomeCompleto.value = "";
-    CPF.value = "";
-    email.value = "";
-    endereço.value="";
-    senha.value = "";
+    nomeEvento.value = "";
+    data.value = "";
+    hora.value = "";
+    local.value = "";
+    responsavel.value="";
+    descricao.value = "";
 };
 
 formulario.addEventListener('submit', function (event) {
