@@ -8,7 +8,7 @@ const descricao = document.querySelector(".descricao");
 
 function cadastra(){
 
-    console.log(nomeEvento.value,data.value,hora.value,local.value,responsavel.value,descricao.value
+    console.log(nomeEvento.value,hora.value,local.value,responsavel.value,descricao.value
         
     )
 
@@ -20,9 +20,7 @@ function cadastra(){
             },
             method: "POST",
             body: JSON.stringify({
-                "nomeEvento": nomeEvento.value,
-                "data": data.value,
-                "hora": hora.value,
+                "nomeEvento": nomeEvento.value, 
                 "local": local.value,
                 "responsavel" : responsavel.value,
                 "descriçao": descricao.value,
