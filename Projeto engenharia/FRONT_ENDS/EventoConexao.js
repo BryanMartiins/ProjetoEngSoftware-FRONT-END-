@@ -35,8 +35,6 @@ function cadastra(){
     
 function limpar(cadastrar) {    
     nomeEvento.value = "";
-    data.value = "";
-    hora.value = "";
     local.value = "";
     responsavel.value="";
     descricao.value = "";
