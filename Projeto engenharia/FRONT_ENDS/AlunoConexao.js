@@ -8,8 +8,6 @@ const Alun_senha = document.querySelector(".Alun_senha");
 
 function cadastra(){
 
-    
-    console.log(Nome_Completo.value,RA.value,CPF.value,email.value,Alun_senha.value)
 
     fetch("http://localhost:8080/Aluno",
          {
