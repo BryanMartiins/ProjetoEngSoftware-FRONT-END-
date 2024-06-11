@@ -47,6 +47,7 @@ function verificaLogin(){
         event.preventDefault()
 
         if (user.value && pass.value) { // Check for empty values (optional)
+          console.log("oi braia")
           results.forEach(element => {
             if (element.email === user.value && element.alun_senha === pass.value) {
               console.log("oiiiii");
