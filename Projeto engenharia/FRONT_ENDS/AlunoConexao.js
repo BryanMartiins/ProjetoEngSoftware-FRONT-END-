@@ -37,6 +37,7 @@ function limpar(cadastrar) {
     CPF.value = "";
     email.value = "";
     Alun_senha.value = "";
+    window.location(window.location.href = 'login.html')
 };
 
 formulario.addEventListener('submit', function (event) {

@@ -33,7 +33,7 @@
 
     <h2>Entre ou Cadastre-se</h2>
 
-    <form action="#">
+    <form id="loginForm">
       <label for="usuario" style="font-size: 18px;">Usuário:</label>
       <input type="text" id="usuario" name="usuario" required placeholder="">
       
@@ -44,26 +44,26 @@
       <a href="#" style="font-size: 16px;">Esqueci minha senha</a>
       
       <div class="opcoes">
-        <input type="radio" name="tipo" id="administrador" value="administrador" required data-usuario="Insira os dados do Administrador:">
+        <input type="radio" name="radio" id="administrador" value="Administrador" required data-usuario="Administrador">
         <label for="administrador">Administrador</label>
       </div>
       
       <div class="opcoes">
-        <input type="radio" name="tipo" id="coordenador" value="coordenador" required data-usuario="Insira os dados do Coordenador:">
+        <input type="radio" name="radio" id="coordenador" value="Coordenador" required data-usuario="Coordenador">
         <label for="coordenador">Coordenador</label>
       </div>
       
       <div class="opcoes">
-        <input type="radio" name="tipo" id="professor" value="professor" required data-usuario="Insira os dados do Professor:">
+        <input type="radio" name="radio" id="professor" value="Professor" required data-usuario="Professor">
         <label for="professor">Professor</label>
       </div>
 
         <div class="opcoes">
-        <input type="radio" name="tipo" id="aluno" value="aluno" required data-usuario="Insira os dados do Aluno:">
+        <input type="radio" name="radio" id="aluno" value="Aluno" required data-usuario="Aluno">
         <label for="aluno">Aluno</label>
      </div>
 
-     <script>
+     <!-- <script>
       const radios = document.querySelectorAll('input[name="tipo"]');
       const usuarioLabel = document.querySelector('label[for="usuario"]');
     
@@ -74,76 +74,22 @@
           }
         });
       });
-    </script>
- 
+    </script> -->
+
 
  <div class="cadastro-button">
   <button><a href="cadastro.html">Cadastre-se</a></button>
  </div>
-
-      
-      <div class="login-button">
-        <button type="submit">Entrar</button>
-      </div>
-
-      
-<script>
-
-  const usuarioInput = document.getElementById('usuario');
-const senhaInput = document.getElementById('senha');
-const tipoInputs = document.querySelectorAll('input[name="tipo"]');
-const loginButton = document.querySelector('.login-button button');
-
-loginButton.addEventListener('click', (event) => {
-  event.preventDefault();
-
-  const usuario = usuarioInput.value;
-  const senha = senhaInput.value;
-  const tipoSelecionado = Array.from(tipoInputs).find(input => input.checked).value;
-
-  // Validação de login por tipo de usuário ************ ATUALIZAR SCRIPT DEPOIS FEITO APENAS PARA FUNCIONAMENTO DO PROGRAMA PARCIAL
-  switch (tipoSelecionado) {
-    case 'administrador':
-      if (usuario === 'admin' && senha === '123') {
-        window.location.href = 'tela-adm.html';
-      } else {
-        alert('Usuário ou senha inválidos para administrador!');
-      }
-      break;
-    case 'coordenador':
-      if (usuario === 'coordenador' && senha === '456') {
-        window.location.href = 'tela-coordenador.html';
-      } else {
-        alert('Usuário ou senha inválidos para coordenador!');
-      }
-      break;
-    case 'professor':
-      if (usuario === 'professor' && senha === '789') {
-        window.location.href = 'tela-professor.html';
-      } else {
-        alert('Usuário ou senha inválidos para professor!');
-      }
-      break;
-    case 'aluno':
-      if (usuario === 'aluno' && senha === '0210') {
-        window.location.href = 'tela-aluno.html';
-      } else {
-        alert('Usuário ou senha inválidos para aluno!');
-      }
-      break;
-  }
-});
-
     
-  
-      </script>
-      
+      <div id="submitButton" class="login-button">
+        <button>Entrar</button>
+      </div>
+</form>
 
-       </form>
   </section>
   <h2>Patrocinadores</h2>
   <ul class="patrocinadores">
-    <img src="img/logo1.png" alt="Alex Marino">
+    <img src="ilogo1.png" alt="Alex Marino">
     <img src="img/logo2" alt="Alex Marino">
     <img src="img/logo2" alt="Alex Marino">
     <img src="img/logo2" alt="Alex Marino">
@@ -151,9 +97,7 @@ loginButton.addEventListener('click', (event) => {
     <p>Fatec-Ourinhos &copy; 2024 - Projeto de engenharia</p>
   </footer>
 
-
-  
-
+<script src="login.js"></script>
 
 </body>
 </html>
