@@ -21,7 +21,7 @@ function cadastra(){
                 "nomeCompleto": Nome_Completo.value,
                 "cpf": CPF.value,
                 "email": email.value,
-                "Senha": Alun_senha.value,
+                "senha": Senha.value,
             })
             
         
@@ -36,7 +36,7 @@ function limpar(cadastrar) {
     Nome_Completo.value = "";
     CPF.value = "";
     email.value = "";
-    Alun_senha.value = "";
+    Senha.value = "";
     window.location(window.location.href = 'login.html')
 };
 

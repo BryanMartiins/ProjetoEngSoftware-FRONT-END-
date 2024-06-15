@@ -48,7 +48,7 @@ function verificaLogin(){
 
         if (user.value && pass.value) { // Check for empty values (optional)
           results.forEach(element => {
-            if (element.email === user.value && element.alun_senha === pass.value) {
+            if (element.email === user.value && element.senha === pass.value) {
               console.log("oiiiii");
               window.location.href = 'tela-aluno.html';
             }
