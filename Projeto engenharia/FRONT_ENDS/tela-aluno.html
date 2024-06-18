@@ -23,9 +23,7 @@
   <img src="logo1.png" alt="Logo da instituição">
 </div>
     <h1>LearnLink</h1>
-    <div class="form-imagem">
-      <img src="undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_selectoption_y9cm_mx7w_-2-_vjsk_js62_gghb_35qw_um1m_-1-_cqnl_5lof (1).svg">
-  </div>
+    
   </header> 
 
 
@@ -33,103 +31,18 @@
      <h4>Eventos</h4>
      <center><h3>ESCOLHA O EVENTO E SE INSCREVA!!!</h3></center>
      <section class="container1">
-  
-      <div class="quadrados">
-        <div class="quadrado">
-          <img src="imagem1.jpg" width="200" height="150">
-          <div class="informacoes">
-            <h3>Título do Evento 1</h3>
-            <p>Data: Monday, 01/04/2024</p>
-            <p>Hora: 10:00</p>
-            <p>Local: Auditório Principal</p>
-            <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Vagas Disponíveis: Unlimited</p>
-            <p>Responsável: Professor João Silva</p>
-            <button onclick="inscrever()">inscrever-se</button>
-            <span id="check" style="display: none;">✔</span>          </div>
-        </div>
-        
-        <div class="quadrado">
-          <img src="imagem2.jpg" width="200" height="150">
-          <div class="informacoes">
-            <h3>Título do Evento 2</h3>
-            <p>Data: Tuesday, 02/04/2024</p>
-            <p>Hora: 14:00</p>
-            <p>Local: Sala de Reuniões</p>
-            <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Vagas Disponíveis: Unlimited</p>
-            <p>Responsável: Colaboradora Maria Souza</p>
-            <button onclick="inscrever()">inscrever-se</button>
-            <span id="check" style="display: none;">✔</span>
-          </div>
-        </div>
-        
-        
-        <div class="quadrado">
-          <img src="imagem3.jpg" width="200" height="150">
-          <div class="informacoes">
-            <h3>Título do Evento 3</h3>
-            <p>Data: Wednesday, 03/04/2024</p>
-            <p>Hora: 19:00</p>
-            <p>Local: Auditório Secundário</p>
-            <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Vagas Disponíveis: Unlimited</p>
-            <p>Responsável: Professor Carlos Pereira</p>
-            <button onclick="inscrever()">inscrever-se</button>
-            <span id="check" style="display: none;">✔</span>          
-          </div>
-        </div>
-        
-        <div class="quadrado">
-          <img src="imagem4.jpg" width="200" height="150">
-          <div class="informacoes">
-            <h3>Título do Evento 4</h3>
-            <p>Data: Thursday, 04/04/2024</p>
-            <p>Hora: 10:00</p>
-            <p>Local: Biblioteca</p>
-            <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Vagas Disponíveis: Unlimited</p>
-            <p>Responsável: Colaboradora Ana Oliveira</p>
-            <button onclick="inscrever()">inscrever-se</button>
-            <span id="check" style="display: none;">✔</span>          
-          </div>
-        </div>
 
-        
-      </div>
+        <table id="tabela-eventos">
 
+        </table>
 
-      <script>
-
-
-        function inscrever() {
-          // Simula a inscrição no evento
-          alert("Inscrição realizada com sucesso!");
-        
-          // Mostra o ícone de check
-          document.getElementById("check").style.display = "inline-block";
-        }
-        
-          
-      </script>
     </section>
-    
-    
-
-
-
-
-    <h2>Patrocinadores</h2>
-    <ul class="patrocinadores">
-      <img src="img/logo1.png" alt="Alex Marino">
-      <img src="img/logo2" alt="Alex Marino">
-      <img src="img/logo2" alt="Alex Marino">
-      <img src="img/logo2" alt="Alex Marino">
- 
-  
+      
       <footer>
     <p>Fatec-Ourinhos &copy; 2024 - Projeto de engenharia</p>
   </footer>
+
+  <script src="mostrarEvento.js"></script>
 
 </body>
 </html>

@@ -3,7 +3,7 @@ const RA = document.querySelector(".RA");
 const Nome_Completo = document.querySelector(".nome_Completo");
 const CPF = document.querySelector(".CPF");
 const email = document.querySelector(".email");
-const Alun_senha = document.querySelector(".Alun_senha");
+const Senha = document.querySelector(".Senha");
 
 
 function cadastra(){
@@ -21,7 +21,7 @@ function cadastra(){
                 "nomeCompleto": Nome_Completo.value,
                 "cpf": CPF.value,
                 "email": email.value,
-                "senha": Alun_senha.value,
+                "senha": Senha.value
             })
             
         
@@ -36,7 +36,7 @@ function limpar(cadastrar) {
     Nome_Completo.value = "";
     CPF.value = "";
     email.value = "";
-    Alun_senha.value = "";
+    Senha.value = "";
     window.location(window.location.href = 'login.html')
 };
 

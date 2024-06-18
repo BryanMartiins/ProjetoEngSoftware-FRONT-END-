@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, inicial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="Autenticacao.js" defer></script>
+    <script src="AutenticacaoAluno.js" defer></script>
     <script src="Deletar.js"></script>
     <title>Login</title>
 </head> 
@@ -25,9 +25,7 @@
   <img src="logo1.png" alt="Logo da instituição">
 </div>
     <h1>LearnLink</h1>
-    <div class="form-imagem">
-      <img src="undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_selectoption_y9cm_mx7w_-2-_vjsk_js62_gghb_35qw_um1m_-1-_cqnl_5lof (1).svg">
-  </div>
+  
   </header>
 
 
@@ -42,11 +40,12 @@
         <option value="professor">Professor</option>
       </select>
       <button  onclick="cadastrar()" id = "botao">Buscar</button>
+
       <table> 
         <thead>
           <tr>
             <th>Nome</th>
-            <th>cpf</th>
+            <th>CPF</th>
             <th>RA</th>
             <th>Email</th>
           </tr>
@@ -54,8 +53,9 @@
       <tbody id="data-table">
       </tbody>
       </table>
+
       <h2>Deletar Professores, Alunos e Colaboradores</h2>
-      <label for="Deletar">RA:</label>
+      <label for="Deletar">ID:</label>
       <input type="text" class="primaryKey" id="deletar1" name="deletar">
       <select name="tipo">
         <option value="aluno">Aluno</option>
@@ -64,7 +64,6 @@
       </select>
        
       <button onclick="Deletar()" id="deletar">Deletar</button>
-      <div id="mensagemDeletado" style="display: none;">Deletado</div>
       
       <h2>Alterar Professores, Alunos e Colaboradores</h2>
       <label for="Deletar">Atualizar:</label>
@@ -79,15 +78,7 @@
       <div id="mensagemAlterado" style="display: none;">Alterado</div>
 
   </section>
-
-
-
-  <h2>Patrocinadores</h2>
-  <ul class="patrocinadores">
-    <img src="img/logo1.png" alt="Alex Marino">
-    <img src="img/logo2" alt="Alex Marino">
-    <img src="img/logo2" alt="Alex Marino">
-    <img src="img/logo2" alt="Alex Marino">
+  
   <footer>
     <p>Fatec-Ourinhos &copy; 2024 - Projeto de engenharia</p>
   </footer>

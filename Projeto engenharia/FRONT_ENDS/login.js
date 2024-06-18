@@ -1,3 +1,4 @@
+
 radios = document.querySelectorAll('input[name="radio"]');
 const usuarioLabel = document.querySelector('label[for="usuario"]');
 const botao = document.getElementById("submitButton");

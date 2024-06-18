@@ -3,14 +3,12 @@ const nomeEvento = document.querySelector(".nomeEvento");
 const data = document.querySelector(".data");
 const hora = document.querySelector(".hora");
 const local = document.querySelector(".local");
+const vagas = document.querySelector(".vagas")
 const responsavel = document.querySelector(".responsavel");
 const descricao = document.querySelector(".descricao");
 
 function cadastra(){
 
-    console.log(nomeEvento.value,hora.value,local.value,responsavel.value,descricao.value
-        
-    )
 
     fetch("http://localhost:8080/Eventos",
          {
@@ -24,12 +22,20 @@ function cadastra(){
                 "local": local.value,
                 "responsavel" : responsavel.value,
                 "descriçao": descricao.value,
+                "hora": hora.value,
+                "vagas": vagas.value,
+                "data": data.value
             })
             
         
         })
-        .then(function (res) {console.log(res) })
-        .catch(function (res) {console.log(res) })
+        .then((response) => {
+            if (response.ok) {
+                window.location.href = 'tela-aluno.html';
+            } else {
+                throw new Error('Erro ao obter os eventos'); // Lança um erro para cair no bloco catch
+            }
+        })
     };
 
     
