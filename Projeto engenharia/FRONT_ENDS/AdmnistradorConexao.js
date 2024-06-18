@@ -37,6 +37,7 @@ function limpar(cadastrar) {
     email.value = "";
     endereco.value = "";
     senha.value = "";
+    window.location(window.location.href = 'login.html')
 };
 
 formulario.addEventListener('submit', function (event) {
