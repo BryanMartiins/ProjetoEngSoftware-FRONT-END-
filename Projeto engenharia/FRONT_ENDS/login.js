@@ -49,11 +49,17 @@ function verificaLogin(){
         if (user.value && pass.value) { // Check for empty values (optional)
           results.forEach(element => {
             if (element.email === user.value && element.senha === pass.value) {
-              console.log("oiiiii");
               window.location.href = 'tela-aluno.html';
             }
           });
-        } else {
+        } 
+        else if(user.value && pass.value){
+            results.forEach(element => {
+              if (element.registro === user.value && element.senha === pass.value) {
+                window.location.href = 'tela-adm.html';
+              }
+            });
+          } else{
           // Handle empty username/password (optional)
         }
       });
