@@ -4,8 +4,8 @@ const botao = document.getElementById("submitButton");
 
 const pass = document.getElementById('senha');
 const user = document.getElementById('usuario');
-
 let results;
+let type;
 
 radios.forEach(radio => {
   radio.addEventListener('change', () => {
@@ -18,6 +18,8 @@ radios.forEach(radio => {
 });
 
 function getAllType(valor) {
+  console.log(valor)
+  type = valor
   fetch(`http://localhost:8080/${valor}`, {
     headers: {
       'Accept': 'application/json',
@@ -47,12 +49,31 @@ function verificaLogin(){
         event.preventDefault()
 
         if (user.value && pass.value) { // Check for empty values (optional)
-          console.log("oi braia")
+          console.log()
           results.forEach(element => {
-            if (element.email === user.value && element.alun_senha === pass.value) {
-              console.log("oiiiii");
-              window.location.href = 'tela-aluno.html';
+            
+            console.log(element.senha)
+            console.log(element.email)
+            if (element.email === user.value && element.senha === pass.value) {
+              
+
+              if(type == "Aluno"){
+                window.location.href = 'tela-aluno.html';
+              }
+              if(type == "Coordenador"){
+                window.location.href = 'tela-coordenador.html';
+              }
+              if(type == "Administrador"){
+                window.location.href = 'tela-adm.html';
+              }
+              if(type == "Professor"){
+                window.location.href = 'tela-professor.html';
+              }
+              
+              
             }
+              
+                
           });
         } else {
           // Handle empty username/password (optional)

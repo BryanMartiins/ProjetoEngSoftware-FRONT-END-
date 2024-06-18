@@ -21,14 +21,14 @@ function cadastra(){
                 "nomeCompleto": Nome_Completo.value,
                 "cpf": CPF.value,
                 "email": email.value,
-                "alun_senha": Alun_senha.value,
+                "senha": Alun_senha.value,
             })
             
         
         })
         .then(function (res) {console.log(res) })
         .catch(function (res) {console.log(res) })
-    };
+};
 
     
 function limpar(cadastrar) {    
